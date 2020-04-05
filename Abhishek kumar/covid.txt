@@ -1,0 +1,7 @@
+COVID-19 DETECTOR.
+
+This is an android application that helps detect presence of corona virus in a person.
+
+The app directory contains all gradle and necessary files required to run the app.
+
+In order to run the app, one need to install android studio and open my app directory in it.
