@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8c89abf2ea6940bcb9709cf910ff09ca {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8c89abf2ea6940bcb9709cf910ff09ca" ></div>
+        
+</body>
+<script>    
+    
+            var map_8c89abf2ea6940bcb9709cf910ff09ca = L.map(
+                "map_8c89abf2ea6940bcb9709cf910ff09ca",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ac8eb7fa46bc481f901815b16c24d8d5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 14, "maxZoom": 14, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            var circle_c8bce7a5541c4b5aaa004f21632e32c5 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_c8bce7a5541c4b5aaa004f21632e32c5.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-01<li> Number of Cases :1<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_08be8337831848409546a035334de71a = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_08be8337831848409546a035334de71a.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-02<li> Number of Cases :1<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6e6c8c7a251b4750a1062e1da6fcbfc6 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_6e6c8c7a251b4750a1062e1da6fcbfc6.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-03<li> Number of Cases :1<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fda44b668ee94d309ac761c795cc49f5 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_fda44b668ee94d309ac761c795cc49f5.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-04<li> Number of Cases :1<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2971d7f3d282431b9bb1ad28ebc2aa18 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_2971d7f3d282431b9bb1ad28ebc2aa18.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-05<li> Number of Cases :1<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_29a0bfa373e64e18accb2efe4d9e3106 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_29a0bfa373e64e18accb2efe4d9e3106.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-06<li> Number of Cases :1<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e53e0b6022644fa7a24ecd53964e7aa2 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_e53e0b6022644fa7a24ecd53964e7aa2.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-07<li> Number of Cases :1<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6f58d9d9880c45e5b78c5fcd91ba9fbe = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_6f58d9d9880c45e5b78c5fcd91ba9fbe.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-08<li> Number of Cases :1<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b47145370c5746b3b16484945cc38d87 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_b47145370c5746b3b16484945cc38d87.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-09<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2d9d9effff3f433396733e51c9c58887 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_2d9d9effff3f433396733e51c9c58887.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-10<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0cd7d1e4efff472a8b4e34ece77cb038 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_0cd7d1e4efff472a8b4e34ece77cb038.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-11<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1eaf1253e5a542119b967755f536b22f = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_1eaf1253e5a542119b967755f536b22f.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-12<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4cd83e0a23d24b2b8e65b0b545a6f9ff = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_4cd83e0a23d24b2b8e65b0b545a6f9ff.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-13<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7709ac9eb2cc4f178983705c772cc309 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_7709ac9eb2cc4f178983705c772cc309.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-14<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_851f15c6dcb74ce1a3db0018c9b36f4b = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_851f15c6dcb74ce1a3db0018c9b36f4b.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-15<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_656a7ca25aa44cf9812ff70fbb0eaaa5 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_656a7ca25aa44cf9812ff70fbb0eaaa5.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-16<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3571730214644e42a5564d31865e3ce7 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_3571730214644e42a5564d31865e3ce7.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-17<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cd9409f5e0ee4dd08ed11379ace9ae3c = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_cd9409f5e0ee4dd08ed11379ace9ae3c.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-18<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fd07f3ad3c374e698dd8a4c244a4d28c = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_fd07f3ad3c374e698dd8a4c244a4d28c.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-19<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5f5434063ce745e5b17667e3144bbbf7 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_5f5434063ce745e5b17667e3144bbbf7.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-20<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e58109260dcc473e979f3340421db9b9 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_e58109260dcc473e979f3340421db9b9.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-21<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1493f50ed72f41d3b65b9c95ab0cd501 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_1493f50ed72f41d3b65b9c95ab0cd501.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-22<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1bbb0aa5b7ae4fb9998d69f5173b36d7 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_1bbb0aa5b7ae4fb9998d69f5173b36d7.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-23<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1a0a615490f04e19a10f12fb88098a25 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_1a0a615490f04e19a10f12fb88098a25.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-24<li> Number of Cases :2<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e34f35c0cfc840fd8745cf4dab117b59 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_e34f35c0cfc840fd8745cf4dab117b59.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-25<li> Number of Cases :6<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_55739f6a63a1465bbbf63e17d4126aa0 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_55739f6a63a1465bbbf63e17d4126aa0.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-26<li> Number of Cases :13<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_38f95017382f4d6c950504c7e7478b8a = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_38f95017382f4d6c950504c7e7478b8a.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-27<li> Number of Cases :15<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2a47d61b35e249a4aa6d1c632b4bdf59 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_2a47d61b35e249a4aa6d1c632b4bdf59.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-28<li> Number of Cases :32<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_82f528f84c514eb0b5c1dfdc0064f149 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_82f528f84c514eb0b5c1dfdc0064f149.bindTooltip(
+                `<div>
+                     <li> Date :2020-02-29<li> Number of Cases :45<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_55db8c8c89b94a0099bdee8257ba0932 = L.circle(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_55db8c8c89b94a0099bdee8257ba0932.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-01<li> Number of Cases :84<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d6bad120575249e0880785b33ab6d60b = L.circle(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_d6bad120575249e0880785b33ab6d60b.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-02<li> Number of Cases :120<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_36bbaa85b64349a2abf0bdc605090e8d = L.circle(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_36bbaa85b64349a2abf0bdc605090e8d.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-03<li> Number of Cases :165<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c9b6b004296d4e0b83df042789b5afa9 = L.circle(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_c9b6b004296d4e0b83df042789b5afa9.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-04<li> Number of Cases :222<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6a12e6569e9d4dccbe37021345ef3ea9 = L.circle(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_6a12e6569e9d4dccbe37021345ef3ea9.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-05<li> Number of Cases :259<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9cb73cf8fc5c4810b9cd7e75c8213ea2 = L.circle(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_9cb73cf8fc5c4810b9cd7e75c8213ea2.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-06<li> Number of Cases :400<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4327fd58b67e4bfbb62323d848cd82bc = L.circle(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_4327fd58b67e4bfbb62323d848cd82bc.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-07<li> Number of Cases :500<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5fda2ffdd47a492c9b57b9ec012d2177 = L.circle(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_5fda2ffdd47a492c9b57b9ec012d2177.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-08<li> Number of Cases :673<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3dd10b3c51b04fc6b929558af2ba38f1 = L.circle(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_3dd10b3c51b04fc6b929558af2ba38f1.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-09<li> Number of Cases :1073<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4f11cfa896824055b0ac2b73d291500a = L.circle(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_4f11cfa896824055b0ac2b73d291500a.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-10<li> Number of Cases :1695<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d00c1c280ade4d7dbc09c57d101e901c = L.circle(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_d00c1c280ade4d7dbc09c57d101e901c.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-11<li> Number of Cases :2277<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7e47ccda5b0a4a99893a3a212a087889 = L.circle(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_7e47ccda5b0a4a99893a3a212a087889.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-12<li> Number of Cases :2277<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b9e097e3f11149639a43a31c00958038 = L.circle(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_b9e097e3f11149639a43a31c00958038.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-13<li> Number of Cases :5232<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4bca51fb393742f2978cb6b9b056bc6b = L.circle(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_4bca51fb393742f2978cb6b9b056bc6b.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-14<li> Number of Cases :6391<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1e2c94a59e8445d0966c981a53854260 = L.circle(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_1e2c94a59e8445d0966c981a53854260.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-15<li> Number of Cases :7798<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b98707857f0a4f9297aa1da9a549b170 = L.circle(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_b98707857f0a4f9297aa1da9a549b170.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-16<li> Number of Cases :9942<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_85f634995ae6468598188f800d2c84fb = L.circle(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_85f634995ae6468598188f800d2c84fb.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-17<li> Number of Cases :11748<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_98d04c8bfad949d19489d2fcc61a0331 = L.circle(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_98d04c8bfad949d19489d2fcc61a0331.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-18<li> Number of Cases :13910<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_41c361ab5ee14753974539a85a690704 = L.circle(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_41c361ab5ee14753974539a85a690704.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-19<li> Number of Cases :17963<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_639652a4e3114bd79c80ef1aa9998257 = L.circle(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_639652a4e3114bd79c80ef1aa9998257.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-20<li> Number of Cases :20410<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_21e57bb4258a40578ed42bbb6fa481b9 = L.circle(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_21e57bb4258a40578ed42bbb6fa481b9.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-21<li> Number of Cases :25374<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a164eba90df24db5a7491141d0f14e98 = L.circle(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_a164eba90df24db5a7491141d0f14e98.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-22<li> Number of Cases :28768<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d3040cdc9bb94962a1e377626bbdbed8 = L.circle(
+                [40.4637, -3.74922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_d3040cdc9bb94962a1e377626bbdbed8.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-23<li> Number of Cases :35136<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_114a5ed4feda40f992cca809cc2e5423 = L.circle(
+                [40.4637, -3.74922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_114a5ed4feda40f992cca809cc2e5423.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-24<li> Number of Cases :39885<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_56923524ed494b65b3b472d25f08c7ae = L.circle(
+                [40.4637, -3.74922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_56923524ed494b65b3b472d25f08c7ae.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-25<li> Number of Cases :49515<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_05ab46b45abf4747bbdba59b008fe7ad = L.circle(
+                [40.4637, -3.74922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_05ab46b45abf4747bbdba59b008fe7ad.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-26<li> Number of Cases :57786<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_89d33aeadec2471c87f296c4d98b7369 = L.circle(
+                [40.4637, -3.74922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_89d33aeadec2471c87f296c4d98b7369.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-27<li> Number of Cases :65719<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f5d611702a6b4e8da3f57d0e56bb126c = L.circle(
+                [40.4637, -3.74922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_f5d611702a6b4e8da3f57d0e56bb126c.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-28<li> Number of Cases :73235<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a6db32bbcae1430388036749f293d913 = L.circle(
+                [40.4637, -3.74922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_a6db32bbcae1430388036749f293d913.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-29<li> Number of Cases :80110<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cf87ae94e2d24bcb8cbfe7a12c12ec02 = L.circle(
+                [40.4637, -3.74922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_cf87ae94e2d24bcb8cbfe7a12c12ec02.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-30<li> Number of Cases :87956<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_746a7f0686384d35ba32acc12d485b74 = L.circle(
+                [40.4637, -3.74922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_746a7f0686384d35ba32acc12d485b74.bindTooltip(
+                `<div>
+                     <li> Date :2020-03-31<li> Number of Cases :95923<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f914729d71784202a123bed5b60b01b0 = L.circle(
+                [40.4637, -3.74922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_8c89abf2ea6940bcb9709cf910ff09ca);
+        
+    
+            circle_f914729d71784202a123bed5b60b01b0.bindTooltip(
+                `<div>
+                     <li> Date :2020-04-01<li> Number of Cases :104118<li> Status :confirmed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
