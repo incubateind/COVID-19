@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diagnosis"
+    android:background="@drawable/background1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:id="@+id/tvwelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello there! Welcome to COVID-19 detector. I would like to ask you some questions before assessing your risk level.Enter YES if your answer is yes and NO if your answer is no. Let's begin"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="20dp"/>
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvwelcome"
+                >
+                <TextView
+                    android:id="@+id/tvcough"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do You have cough?"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/tvcough">
+
+                    <EditText
+                        android:id="@+id/et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:height="40dp"
+                        android:background="@drawable/et_bg"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r1"
+                >
+                <TextView
+                    android:id="@+id/tvcold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do You have cold??"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/tvcold">
+
+                    <EditText
+                        android:id="@+id/et1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:height="40dp"
+                        android:background="@drawable/et_bg"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/r3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r2"
+                >
+                <TextView
+                    android:id="@+id/tvdiarrhea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do You have diarrhea??"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/tvdiarrhea">
+
+                    <EditText
+                        android:id="@+id/et2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:height="40dp"
+                        android:background="@drawable/et_bg"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r3"
+                >
+                <TextView
+                    android:id="@+id/tvsorethroat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do You have sore throat??"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/tvsorethroat">
+
+                    <EditText
+                        android:id="@+id/et3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:height="40dp"
+                        android:background="@drawable/et_bg"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"/>
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r4"
+                >
+                <TextView
+                    android:id="@+id/tvache"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Are you experiencing body ache? "
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/tvache">
+
+                    <EditText
+                        android:id="@+id/et4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:height="40dp"
+                        android:background="@drawable/et_bg"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r5"
+                >
+                <TextView
+                    android:id="@+id/tvheadache"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have headache? "
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/tvheadache">
+
+                    <EditText
+                        android:id="@+id/et5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:height="40dp"
+                        android:background="@drawable/et_bg"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r6"
+                >
+                <TextView
+                    android:id="@+id/tvtemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Is your temperature above 37.8 C?"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/tvtemp">
+
+                    <EditText
+                        android:id="@+id/et6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:height="40dp"
+                        android:background="@drawable/et_bg"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r7"
+                >
+                <TextView
+                    android:id="@+id/tvbreathe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Are you having difficulty breathing?"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/tvbreathe">
+
+                    <EditText
+                        android:id="@+id/et7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:height="40dp"
+                        android:background="@drawable/et_bg"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/r9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r8"
+                >
+                <TextView
+                    android:id="@+id/tvfatigue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Are you experiencing fatigue?"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/tvfatigue">
+
+                    <EditText
+                        android:id="@+id/et8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:height="40dp"
+                        android:background="@drawable/et_bg"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"/>
+
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:padding="10dp"
+                    android:text="Proceed to results"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    />
+
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tvfinall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
