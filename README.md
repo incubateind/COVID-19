@@ -1,9 +1,3 @@
-# Team Name : The Pack
-<p>Team Leader : Harsh Chauhan </p>
-
-<p>I Explained my whole idea in my presentation. That you will find in my folder in the form of PDF </p>
-
-
 # Hack for Good: COVID-19
 Project Submission for COVID-19 starting 18th March.
 
