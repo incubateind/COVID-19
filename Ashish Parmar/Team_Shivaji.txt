@@ -1,0 +1,37 @@
+                                                                   COVID19 APP
+
+
+The first case of the 2019–20 coronavirus pandemic in India was reported on 30 January 2020, originating from China. Experts suggest the number of infections could be much higher as India's testing rates are among the lowest in the world. The infection rate of COVID-19 in India is reported to be 1.7, significantly lower than in the worst affected countries.
+
+The outbreak has been declared an epidemic in more than a dozen states and union territories, where provisions of the Epidemic Diseases Act, 1897 have been invoked, and educational institutions and many commercial establishments have been shut down. India has suspended all tourist visas, as a majority of the confirmed cases were linked to other countries.
+
+On 22 March 2020, India observed a 14-hour voluntary public curfew at the instance of the prime minister Narendra Modi. The government followed it up with lockdowns in 75 districts where COVID cases had occurred as well as all major cities. Further, on 24 March, the prime minister ordered a nationwide lockdown for 21 days, affecting the entire 1.3 billion population of India.
+The World Health Organisation chief executive director of health emergencies programme Michael Ryan said that India had "tremendous capacity" to deal with the coronavirus outbreak and, as the second most populous country, will have enormous impact on the world's ability to deal with it.Other commentators worried about the economic devastation caused by the lockdown, which has huge effects on informal workers, micro and small enterprises, farmers and the self-employed, who are left with no livelihood in the absence of transportation and access to markets. The lockdown was justified by the government and other agencies for being preemptive to prevent India from entering a higher stage which could make handling very difficult and cause even more losses thereafter.
+
+According to a study at Shiv Nadar University, India could have witnessed a surge of 31,000 cases of disease between March 24 and April 14 without lockdown.
+
+
+Keeping the current situation in mind , we have come up with an idea to help the Government curb this pandemic from spreading in our country. These days usage of mobile apps has increased so our solution is in the form of an app , which will have the following features :
+
+1.	It will have an in built Covid19 tracker , which will have all  the following dynamic data :
+(i).  Number of positive cases , death cases and recovered cases 
+(ii). Hotspots of each state and district marked in the map 
+(iii). Graphs of Recovery Rate , Increase in Covid cases
+(iv). Gender Probability , Mortality Rate , Fatality Rate 
+(v). Total number of Covid19 hospitals  in each state . 
+(vi).  Total number of beds allotted by each state. 
+
+2.	This app will have access to the user’s location and will be tracking the movement. The users movement within 20 meters of his/her residence . When the user leaves the house to get some essentials , it is marked as yellow and if the user goes into a hotspot then the user will be marked as red .This feature is implemented keeping the importance of quarantine and social distancing in mind . The user will be marked green only when the yellow marked user is spends at least 4 days at home in quarantine and the red marked user will have to spend at least 7 days at home . Once , the red user come back home , the entire family is marked as read .
+
+3.	If the red user goes out of the mandatory quarantine of 7 days then they will remain as a red user, they will have to stay at home for the next 7 days . If a user remains marked red for more than 14 days , then a medical staff will be allotted to take samples of the user from their homes. 
+
+4.	There will be  a portal wherein the red users can put in a request for help , that would be notified to the police and medical staff. 
+
+5.	The user will be notified if any red user is around by the notification system mentioning the distance from the user.
+
+6.	The police and the medical staff using this app will have a feature of tracking the red users in the map . 
+
+7.	As per the government instructions the people living in the hotspot areas aren’t allowed to leave their house , these users will be marked permanently red. And any movement in that area will be notified to the police and the medical staff . 
+
+8.	This app will also inform the user the nearest store where the user can get the essentials when he/she moves out of the house .
+
